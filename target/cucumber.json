@@ -1,0 +1,76 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 25,
+        "name": "check if logged user",
+        "description": "",
+        "id": "check-current-result;check-if-logged-user;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 12587207670,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Main page is opened",
+            "match": {
+              "location": "StepDefs.main_page_is_opened()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 22715485798,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "login to account by Facebook",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Facebook",
+                  "offset": 20
+                }
+              ],
+              "location": "StepDefs.iOpenLogInWithUserNameAndPassword(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6452212283,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user is logged Юрий",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Юрий",
+                  "offset": 15
+                }
+              ],
+              "location": "StepDefs.iAmLogedAndISeeMyNameResult(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "check current result",
+    "description": "",
+    "id": "check-current-result",
+    "keyword": "Feature",
+    "uri": "src/test/java/features/RiaSimpleTests.feature",
+    "tags": []
+  }
+]
